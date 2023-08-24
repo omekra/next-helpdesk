@@ -27,6 +27,13 @@
       "body": "New ticket body",
       "priority": "medium",
       "user_email": "luigi@email.dev"
+    },
+    {
+      "id": "5",
+      "title": "Another new ticket",
+      "body": "New ticket body",
+      "priority": "medium",
+      "user_email": "gigi@email.dev"
     }
   ]
 }
