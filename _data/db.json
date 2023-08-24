@@ -22,18 +22,11 @@
       "user_email": "peach@netninja.dev"
     },
     {
+      "id": "4",
       "title": "My new ticket",
       "body": "New ticket body",
       "priority": "medium",
-      "user_email": "luigi@email.dev",
-      "id": "gJ4stdF"
-    },
-    {
-      "title": "Another ticket",
-      "body": "Another body",
-      "priority": "high",
-      "user_email": "luigi@email.dev",
-      "id": "5rprgIM"
+      "user_email": "luigi@email.dev"
     }
   ]
 }
