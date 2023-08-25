@@ -18,10 +18,9 @@ export default function CreateForm() {
       title,
       body,
       priority,
-      user_email: "luigi@email.dev",
     };
 
-    const res = await fetch("http://localhost:4000/tickets", {
+    const res = await fetch("http://localhost:3000/api/tickets", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -29,7 +28,13 @@ export default function CreateForm() {
       body: JSON.stringify(ticket),
     });
 
-    if (res.status === 201) {
+    const json = await res.json();
+
+    if (json.error) {
+      console.log("🚀 ~ json.error:", json.error);
+    }
+
+    if (json.data) {
       router.refresh();
       router.push("/tickets");
     }
